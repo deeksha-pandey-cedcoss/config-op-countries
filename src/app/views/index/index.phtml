@@ -1,0 +1,25 @@
+<?php
+
+// echo "<pre>";
+// print_r($data);
+// die;
+?>
+<form action ="/index/timedef" method="Post">
+<?php
+echo "<label for='timed'>Choose a time:</label>";
+
+echo " <select name='timez' class='form-control'>";
+foreach ($data as $key => $value) {
+    // echo "<br>";
+    // echo $key;
+    // echo "<br>";
+    // echo $value;
+    echo "
+   
+    <option value=$value>$key</option>   ";
+}
+echo " </select>";
+echo "<br>";
+?>
+<button type ='submit' class="btn btn-info">Submit</button>
+</form>
